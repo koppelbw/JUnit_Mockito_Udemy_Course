@@ -1,0 +1,9 @@
+INDEX VERSION 1.127+/home/wkoppelb/Documents/Junit_workspace/.metadata/.plugins/org.eclipse.jdt.core
+795285479.index
+814763125.index
+2533398566.index
+4132254105.index
+3431190943.index
+669624504.index
+150271965.index
+3204846877.index

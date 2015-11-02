@@ -1,0 +1,40 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class GreetingImplTest {
+
+	private Greeting greeting;
+	
+	@Before
+	public void setup() {
+		greeting = new GreetingImpl();
+	}
+	
+	@Test
+	public void greetReturnGreetingTest() {
+		String result = greeting.greet("JUnit");
+		assertNotNull(result);
+		assertEquals("Hello JUnit", result);	
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void greetThrowsException_NullNameTest() {
+		greeting.greet(null);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void greetThrowsException_BlankNameTest() {
+		greeting.greet("");
+	}
+	
+	
+	
+	
+	@After
+	public void teardown() {
+		greeting = null;
+	}
+}

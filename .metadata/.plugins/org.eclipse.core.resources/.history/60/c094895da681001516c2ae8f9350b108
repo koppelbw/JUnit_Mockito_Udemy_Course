@@ -1,0 +1,18 @@
+package com.wkoppelb.useradmin.dao;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.modules.junit4.legacy.PowerMockRunner;
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(IDGenerator.class)
+public class UserDAOTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

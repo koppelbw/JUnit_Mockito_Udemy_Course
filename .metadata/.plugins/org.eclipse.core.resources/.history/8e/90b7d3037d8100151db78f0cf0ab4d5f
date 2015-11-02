@@ -1,0 +1,10 @@
+package com.wkoppelb.mockito.scrapbook;
+
+public class A {
+
+	public int usesVoidMethod() {
+		B b = new B();
+		
+		return 0;
+	}
+}

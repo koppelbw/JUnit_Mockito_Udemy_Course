@@ -1,0 +1,10 @@
+package com.wkoppelb.useradmin.dao;
+
+import com.wkoppelb.useradmin.dto.User;
+
+public class UserDAO {
+
+	public int create(User user) {
+		
+	}
+}

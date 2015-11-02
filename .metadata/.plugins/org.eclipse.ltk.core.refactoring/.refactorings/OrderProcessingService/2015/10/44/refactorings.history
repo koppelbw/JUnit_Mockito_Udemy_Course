@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;order&apos; from expression &apos;new Order()&apos;&#x0A;- Original project: &apos;OrderProcessingService&apos;&#x0A;- Variable name: &apos;order&apos;&#x0A;- Destination method: &apos;com.bharath.order.bo.OrderBOImplTest.placeOrder_createAnOrder()&apos;&#x0A;- Variable expression: &apos;new Order()&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;order&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/test&lt;com.bharath.order.bo{OrderBOImplTest.java" name="order" replace="true" selection="477 11" stamp="1446234045872" version="1.0"/>
+</session>

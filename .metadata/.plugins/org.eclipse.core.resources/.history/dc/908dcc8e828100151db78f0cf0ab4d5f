@@ -1,0 +1,17 @@
+package com.wkoppelb.mockito.scrapbook;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ATest {
+
+	@Mock
+	B b;
+	
+	@Test
+	public void usesVoidMethod_CallsVoidMethod() {
+		A a = new A(null);
+	}
+
+}

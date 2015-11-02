@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;ORDER_ID&apos; from expression &apos;123&apos;&#x0A;- Original project: &apos;OrderProcessingService&apos;&#x0A;- Constant name: &apos;ORDER_ID&apos;&#x0A;- Constant expression: &apos;123&apos;&#x0A;- Declared visibility: &apos;private&apos;" description="Extract constant &apos;ORDER_ID&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/test&lt;com.bharath.order.bo{OrderBOImplTest.java" name="ORDER_ID" qualify="false" replace="false" selection="2877 3" stamp="1446477957895" version="1.0" visibility="2"/>
+</session>

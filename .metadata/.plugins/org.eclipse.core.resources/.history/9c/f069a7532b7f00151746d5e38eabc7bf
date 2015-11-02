@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class GreetingImplTest {
+
+	@Test
+	public void greetReturnGreetingTest() {
+		Greeting greeting = new GreetingImpl();
+		greeting.greet("JUnit");
+		
+	}
+
+}

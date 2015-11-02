@@ -1,0 +1,24 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CalculatorImplTest {
+
+	int num1;
+	int num2;
+	int result;
+	
+	public CalculatorImplTest(int num1, int num2, int result) {
+		this.num1 = num1;
+		this.num2 = num2;
+		this.result = result;
+	}
+	
+	@Test
+	public void addReturnResult() {
+		Calculator calc = new CalculatorImpl();
+		int result = calc.add(10, 20);
+		assertEquals(30, result);
+	}
+
+}

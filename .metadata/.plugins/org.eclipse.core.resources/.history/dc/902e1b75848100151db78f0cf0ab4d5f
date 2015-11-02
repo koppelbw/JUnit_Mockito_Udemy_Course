@@ -1,0 +1,35 @@
+package com.wkoppelb.mockito.scrapbook;
+
+import static org.junit.Assert.assertSame;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+
+public class ATest {
+
+	@Mock
+	B b;
+	private A a;
+	
+	@Before
+	public void setup() {
+		MockitoAnnotations.initMocks(this);
+		a = new A(b);
+	}
+	
+	@Test
+	public void usesVoidMethod_CallsVoidMethod() throws Exception {
+		Mockito.doNothing().when(b).voidMethod();
+		assertSame(1, a.usesVoidMethod());
+		Mockito.verify(b).voidMethod();
+	}
+	
+	@Test(expected = RunTimeException.class)
+	public void usesVoidMethod_ThrowsException() throws Exception {
+		Mockito.doThrow(Exception.class).when(b).voidMethod();
+	}
+
+}

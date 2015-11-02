@@ -1,0 +1,16 @@
+package com.wkoppelb.mockito.scrapbook;
+
+import org.junit.Test;
+import org.mockito.Mock;
+
+public class ATest {
+
+	@Mock
+	B b;
+	
+	@Test
+	public void usesVoidMethod_CallsVoidMethod() {
+		A a = new A(b);
+	}
+
+}

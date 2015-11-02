@@ -1,0 +1,5 @@
+package com.wkoppelb.useradmin.util;
+
+public class IDGenerator {
+
+}

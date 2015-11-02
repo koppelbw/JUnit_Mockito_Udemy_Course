@@ -1,0 +1,20 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class GreetingImplTest {
+
+	@Test
+	public void greetReturnGreetingTest() {
+		Greeting greeting = new GreetingImpl();
+		String result = greeting.greet("JUnit");
+		assertNotNull(result);
+		assertEquals("Hello JUnit", result);	
+	}
+
+	@Test(expected)
+	public void greetThrowsException_NullNameTest() {
+		Greeting greeting = new GreetingImpl();
+		greeting.greet(null);
+	}
+}

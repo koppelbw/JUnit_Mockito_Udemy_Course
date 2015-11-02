@@ -1,0 +1,5 @@
+package com.wkoppelb.useradmin.dao;
+
+public class UserDAO {
+
+}

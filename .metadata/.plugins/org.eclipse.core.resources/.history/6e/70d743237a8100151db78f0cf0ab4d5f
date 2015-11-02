@@ -1,0 +1,133 @@
+-----------------------
+Section 2: Introduction
+-----------------------
+[3] - "Unit Testing Introduction"
+ 
+	Unit Testing: 
+		Testing at the class level. Test all the public methods on a class. Testing positive and exception options.
+		Assures quality.
+		Runs very fast.
+		Regression Suite. We ensure that any other changes made by another Dev will not break your code.
+		
+	J2EE flow:
+		OrderProcessor -> OrderService -> OrderDAO -> DB
+		We wont be testing all the way down the line with unit tests, we will test each class individually.
+		We can use Mocks to do this.
+
+--------------------------
+Section 3: JUnit in Action
+--------------------------
+[4] - "Useless 24s video..."
+
+[5]	- "JUnit Introduction"
+	
+	API: JUnit 4
+		Uses Annotations
+			@Test
+			@Before - ran BEFORE EACH test method
+			@After - ran AFTER EACH test method
+			@BeforeClass - ran only ONCE BEFORE the tests
+			@Ignore - ignores the test
+			
+			
+	Assert results:
+		assertNotNull()
+		assertNull()
+		assertTrue()
+		assertEquals()
+		assertSame()
+		etc..
+	
+		
+	Run and Report results:
+		BlockJunit4ClassRunner.class
+		@RunWith(SpringJUnit4ClassRunner.class)
+	
+	
+[6] - "Hello JUnit"
+
+	@Test
+	assertNotNull(); assertEquals()
+
+
+[7] - "Testing for Exceptions"
+
+	@Test(expected = IllegalArgumentException.class)
+	
+
+[8] - "@Before and @After"
+
+	@Before
+		Ran before each test method. Used for setup
+	
+	@After
+		Ran after each test method. Used for cleanup
+
+--------------------------
+Section 4: Mockito in Action
+--------------------------
+
+[9] - "useless 22s video"
+
+
+[10] - "Mocking Introduction"
+
+	Mock: mimic or imitate
+	The Mock object will take place of the real object. We want to test our code without the dependencies.
+	Each unit is tested on it's own, and once all are working they will work together.
+	
+	OrderProcessor -> OrderService -> OrderDAO -> DB
+		We wont be testing all the way down the line with unit tests, we will test each class individually.
+	
+	Mockito provides 3 important steps
+	----------------------------------	
+	Stub -> @Mock
+	Setting Expectations -> when, thenReturn, thenThrow
+	Verify -> verify, matchers, etc.
+
+
+[11] - "The Order Processor Usecase"
+[12] - "Create the DAO layer"
+[13] - "Create the BO layer"
+[14] - "Add the Mockito Dependency"
+
+
+[15] - "Stubbing and Setting Expectations"k 
+
+	Mock -> @Mock
+		
+	Set Expectations -> when().andReturn()
+				
+		
+[16] - "Verifying the results"
+
+	Mockito.verify() -> checks that the method we specify is called once
+	This tests to see if the Mock method is actually getting called
+
+[17] - "Test a negative scenario"
+[18]
+[19]
+[20]
+[21]
+[22]
+
+
+-------------------------
+Section 5: Test Coverage
+-------------------------
+
+[23] - "Introduction"
+[24] - "Test Coverage"
+	Number of lines of code that is tested when we run our Tests.
+
+[25] - "EclEmma Installation"
+[26] - "Measuring coverage using Emma"
+[27] - "Improving the Coverage"
+
+
+------------------------
+Section 6: More Mockito
+------------------------
+[29]
+	
+[30]
